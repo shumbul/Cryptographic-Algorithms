@@ -3,14 +3,15 @@
 using namespace std;
 
 signed main() {
-#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-#endif
+// #ifndef ONLINE_JUDGE
+// 	freopen("input.txt", "r", stdin);
+// 	freopen("output.txt", "w", stdout);
+// #endif
 	cout << "Press 1 for Encryption, 2 for Decryption\n";
 	int choice;	cin >> choice;	cout << "Choice = " << choice << endl;
 	if (choice == 1)
-	{	cout << "Enter text\n";
+	{	
+		cout << "Enter text\n";
 		string s;
 		cin.ignore();
 		getline(cin, s);
@@ -25,7 +26,8 @@ signed main() {
 		cout << "Ciphertext is: \n" << s << endl;
 	}
 	else
-	{	cout << "Enter ciphertext\n";
+	{	
+		cout << "Enter ciphertext\n";
 		string s;
 		cin.ignore();
 		getline(cin, s);
